@@ -1,12 +1,15 @@
-
 * {
-    padding: 0;
-    margin: 0;
-  }
+  padding: 0;
+  margin: 0;
+}
 
-  #card{
-      border: 2px solid black;
-    width: 300px;
-    height: 450px;
-    background-image: url(https://watchincanada.ca/media/cache/a9/a0/a9a03a32b1d6b923d4503d3d77edb08d.jpg);
-  }
+#card {
+  border: 2px solid black;
+  width: 300px;
+  height: 450px;
+}
+#name {
+  margin-left: 89px;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
