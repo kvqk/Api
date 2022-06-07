@@ -1,4 +1,4 @@
-const mainCard = document.getElementById("card");
+const mainCard = document.getElementById("mainContainer");
 
 async function getData() {
   const response = await fetch(
@@ -9,14 +9,13 @@ async function getData() {
   res?.data.map((anime) => {
     console.log(anime);
     const div = document.createElement("div");
-    div.id = "indiviual card";
-    div.style.width = "500px";
-    div.style.height = "500px";
+    div.id = "indiviual-card";
 
     const image = document.createElement("img");
     image.src = anime.anime_img;
 
     const nameSpan = document.createElement("span");
+    nameSpan.id = "name";
     nameSpan.textContent = anime.anime_name;
 
     div.append(image);
