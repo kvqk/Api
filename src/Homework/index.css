@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  #background-color{
+    ackground-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #56d8e4, #9f00e9);
+  }
+  #login-form{
+    display: flex;
+  flex-direction: column;
+  width: 800px;
+  height: 450px;
+  background-color: white;
+  border-radius: 30px;
+  }
+  
