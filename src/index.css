@@ -2,34 +2,87 @@
   padding: 0;
   margin: 0;
 }
-
-#mainContainer {
-  width: 100%;
-  height: 100%;
+#background-color {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
   display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  margin-top: 100px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(120deg, #56d8e4, #9f00e9);
 }
-
-#indiviual-card img {
-  width: 300px;
-  height: 450px;
-  object-fit: fill;
-}
-#indiviual-card {
-  width: 300px;
-  padding: 10px 10px 30px 10px;
-  height: 450px;
-  border: 2px solid black;
+#login-form {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  width: 500px;
+  height: 450px;
+  background-color: white;
+  border-radius: 30px;
 }
-#name {
+#loginText {
+  font-size: 30px;
+  border-bottom: 1px solid grey;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  font-family: sans-serif;
+}
+#center {
+  display: flex;
+  align-items: center;
   width: 100%;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  height: 100%;
+  justify-content: center;
+}
+#redBorder {
+  display: flex;
+  flex-direction: column;
+  height: 97%;
+  width: 76%;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+#username {
+  margin-top: 40px;
+  border: none;
+  border-bottom: 1px solid grey;
+  padding: 5px 10px;
+  outline: none;
+  justify-content: center;
+  color: lightgray;
+  margin-bottom: 40px;
   font-size: 20px;
+}
+#password {
+  border: none;
+  border-bottom: 1px solid grey;
+  padding: 5px 10px;
+  outline: none;
+  color: lightgray;
+  font-size: 20px;
+}
+#forgotPassTxt {
+  margin-right: 267px;
+  color: grey;
+  margin-bottom: 30px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#button {
+  height: 50px;
+  background-color: #0096ff;
+  color: white;
+  font-size: 20px;
+  border-radius: 30px;
+  border: none;
+  width: 216px;
+  margin-left: 80px;
+  cursor: pointer;
+}
+.memberTxt {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+#signUp {
+  color: #0096ff;
+  cursor: pointer;
 }
