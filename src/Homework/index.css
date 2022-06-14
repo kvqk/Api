@@ -26,6 +26,7 @@
   border-bottom: 1px solid grey;
   padding-bottom: 20px;
   padding-top: 20px;
+  font-family: sans-serif;
 }
 #center {
   display: flex;
@@ -35,23 +36,51 @@
   justify-content: center;
 }
 #redBorder {
-  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
   height: 75%;
   width: 76%;
   padding-left: 20px;
   padding-right: 20px;
 }
 #username {
-  margin-top: 100px;
+  margin-top: 40px;
   border: none;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid grey;
   padding: 5px 10px;
   outline: none;
-
+  justify-content: center;
+  color: lightgray;
+  margin-bottom: 40px;
 }
 #password {
   border: none;
-  border-bottom: 1px solid lightgray;
+  border-bottom: 1px solid grey;
   padding: 5px 10px;
   outline: none;
+  color: lightgray;
+}
+#forgotPassTxt{
+  margin-right: 267px;
+  color: grey;
+  margin-bottom: 30px;
+
+}
+#button{
+  height: 50px;
+  background-color: #0096FF	;
+  color: white;
+  font-size: 20px;
+  border-radius: 30px;
+  border: none;
+  width: 216px;
+  margin-left: 80px;
+  cursor: pointer;
+}
+.memberTxt{
+  font-family: sans-serif;
+}
+#signUp{
+  color: #0096FF;
+  cursor: pointer;
 }
