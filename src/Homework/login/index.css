@@ -13,7 +13,7 @@
   justify-content: center;
   background: linear-gradient(120deg, #56d8e4, #9f00e9);
 }
-#login-form {
+#loginForm {
   display: flex;
   flex-direction: column;
   width: 500px;
