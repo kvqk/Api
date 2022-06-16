@@ -1,22 +1,21 @@
 const container = document.getElementById("background-color");
 
 const loginForm = document.createElement("div");
-loginForm.id = "loginForm";
-
+loginForm.id = "login-form";
 container.append(loginForm);
 
 const loginText = document.createElement("div");
 const login = document.createElement("p");
 loginText.id = "loginText";
-loginText.textContent = "Login";
+loginText.textContent = "Sign Up";
 
-loginText.append(login);
 loginForm.append(loginText);
 
 const center = document.createElement("div");
 center.id = "center";
 
 loginForm.append(center);
+
 const redBorder = document.createElement("div");
 redBorder.id = "redBorder";
 center.append(redBorder);
@@ -33,31 +32,32 @@ password.placeholder = "Password";
 password.type = "password";
 redBorder.append(password);
 
-const forgotPassword = document.createElement("p");
-forgotPassword.id = "forgotPassTxt";
-forgotPassword.textContent = "Forgot Password?";
-redBorder.append(forgotPassword);
+const email = document.createElement("input");
+email.id = "username";
+email.classList.add("onlyUsername");
+email.placeholder = "Email";
+email.type = "email";
+
+redBorder.append(email);
 
 const button = document.createElement("button");
 button.id = "button";
 button.textContent = "Login";
 redBorder.append(button);
 
-const memberSignUp = document.createElement("div");
-memberSignUp.id = "memberSignUp";
-redBorder.append(memberSignUp);
+const haveAccount = document.createElement("p");
+haveAccount.classList.add("haveAccount");
+haveAccount.textContent = "Already Have An Account?";
+redBorder.append(haveAccount);
 
-const memberTxt = document.createElement("p");
-memberTxt.classList.add("memberTxt");
-memberTxt.textContent = "Not A Member?";
-memberSignUp.append(memberTxt);
+
+redBorder.append(login);
 
 const href = document.createElement("a");
-href.href = "../signUp/index.html";
-memberSignUp.append(href);
-
+href.href = "../logIn/index.html";
+redBorder.append(href);
 const span = document.createElement("span");
-span.classList.add("memberTxt");
-span.id = "signUp";
-span.textContent = "Sign Up";
+span.classList.add("haveAccount");
+span.id = "login";
+span.textContent = "Login";
 href.append(span);
